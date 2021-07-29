@@ -10,7 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/',function(){
+    return view("welcome");
+});
 // Route::get('export','ExportController@export');
 Route::get('downloadExcel/{type?}', 'ExportController@downloadExcel');
 Route::get('excel/data','ExportController@getData');
